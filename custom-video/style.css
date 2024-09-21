@@ -7,11 +7,10 @@
 }
 
 :root {
-  --background-color: #eae8dc;
-  --background-slide-color: #000000d3;
-  --main-text-color: #353533;
-  --accent-color: #e85a4f;
-  --accent-light-color: #e98074;
+  --background-color-xs: #E9EFEC;
+  --background-color-s: #C4DAD2;
+  --main-text-color: #16423C;
+  --accent-color: #6A9C89;
   --additional-light-color: #adadad;
   --additional-dark-color: #6a6a6a;
 }
@@ -79,14 +78,21 @@ html {
 body {
   font-family: Montserrat;
   font-style: normal;
-  /* color: $color-dark-xl; */
+  color: var(--main-text-color);
   overflow-x: hidden;
+  background-color: var(--background-color-xs);
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 40px;
+}
+
+.title {
+  font-size: 1.7rem;
+  text-align: center;
+  
 }
 
 @media (max-width: 768px) {
