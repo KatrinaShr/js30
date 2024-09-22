@@ -69,7 +69,7 @@ btnMuteEl.addEventListener('click', () => {
   btnVolumeEl.classList.remove('hidden');
   btnMuteEl.classList.add('hidden');
   videoEl.volume = 0.5;
-  progressVolumeEl.value = 100;
+  progressVolumeEl.value = 50;
   updateProgressBar(progressVolumeEl);
 });
 
@@ -81,6 +81,15 @@ progressSpeedEl.addEventListener('input', function() {
 
 progressVolumeEl.addEventListener('input', function() {
   videoEl.volume = this.value / 100;
+
+  if (Number(this.value) === 0) {
+    btnVolumeEl.classList.add('hidden');
+    btnMuteEl.classList.remove('hidden');
+  } else if (Number(this.value) > 0) {
+    btnVolumeEl.classList.remove('hidden');
+    btnMuteEl.classList.add('hidden');
+  }
+
   updateProgressBar(this);
 });
 
