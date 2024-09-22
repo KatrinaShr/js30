@@ -160,25 +160,14 @@ body {
   fill: var(--accent-color);
 }
 
-.video-play:active path {
-  fill: var(--accent-color);
-}
-
 .btn-play,
-.btn-pause {
+.btn-pause,
+.btn-volume,
+.btn-mute {
     width: 28px;
     height: 30px;
     cursor: pointer;
-}
-
-.btn-volume {
-  width: 28px;
-  height: 30px;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  transition: 0.3s;
+    transition: 0.3s;
 }
 
 .controls__progress,
@@ -273,7 +262,6 @@ body {
 }
 
 .progress-bar {
-  /* background: linear-gradient(to right, var(--accent-color-light) 0%, var(--accent-color-light) 40%, var(--additional-light-color) 40%, var(--additional-light-color) 100%); */
   border-radius: 15px;
   height: 6px;
   outline: none;
