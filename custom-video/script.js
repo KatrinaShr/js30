@@ -16,6 +16,7 @@ const progressSpeedEl = document.querySelector('.progress-speed');
 const progressVolumeEl = document.querySelector('.progress-volume');
 
 const titleSpeedEl = document.querySelector('.title-speed');
+const controlsEl = document.querySelector('.controls');
 let currentVideoDuration = 0;
 
 document.addEventListener("DOMContentLoaded", init());

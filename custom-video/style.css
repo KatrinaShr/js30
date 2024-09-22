@@ -243,24 +243,6 @@ body {
   width: 55px;
 }
 
-/* .progress {
-  flex: 10;
-  position: relative;
-  display: flex;
-  height: 6px;
-  transition: height 0.3s;
-  background:var(--additional-light-color);
-  border-radius: 15px;
-  cursor: pointer;
-  max-width: 400px;
-} */
-
-.progress__filled {
-  /* background: var(--accent-color);
-  flex: 0; */
-  /* flex-basis: 50%; */
-}
-
 .progress-bar {
   border-radius: 15px;
   height: 6px;
